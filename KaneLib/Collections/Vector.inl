@@ -1382,7 +1382,7 @@ inline typename vector<T,Alloc>::pointer vector<T,Alloc>::insert_range(pointer p
 			        copy_construct_range(ufirst, ulast, first);
 		}
 
-		return ufirst;
+		return ulast;
 
 	} else {
 		// Have to reallocate.  Allocate the new array first
